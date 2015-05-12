@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-
+#Using for the font-awesome icons
+gem "font-awesome-rails"
+# Using it to create the default folder for picking up the templates for angularjs
+gem 'angular-rails-templates'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -17,13 +20,14 @@ gem 'bower-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'sass', '3.2.19'
+
 gem "foreman"
 group :production, :staging do
   gem "rails_12factor"
-  ruby '2.1.5'
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
 end
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
