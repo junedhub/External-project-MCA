@@ -1,7 +1,7 @@
 angular.module('named-views.mover', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider) {
     $stateProvider
       .state('home.mover', {
         url: 'mover',
@@ -17,5 +17,5 @@ angular.module('named-views.mover', [
         }
       }
     )
-  })
+  }])
 ;

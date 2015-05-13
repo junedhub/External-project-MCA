@@ -1,7 +1,7 @@
 angular.module('named-views.more-info-mover', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider) {
     $stateProvider
       .state('home.more-info-mover', {
         url: 'more-info-mover',
@@ -15,6 +15,6 @@ angular.module('named-views.more-info-mover', [
         }
       }
     )
-  })
+  }])
 ;
 

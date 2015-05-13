@@ -1,7 +1,7 @@
 angular.module('named-views.deal', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider) {
     $stateProvider
       .state('home.deal', {
         url: 'deal',
@@ -16,5 +16,5 @@ angular.module('named-views.deal', [
         }
       }
     )
-  })
+  }])
 ;

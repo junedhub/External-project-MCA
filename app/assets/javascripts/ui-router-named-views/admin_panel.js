@@ -1,7 +1,7 @@
 angular.module('named-views.adminPanel', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider) {
     $stateProvider
       .state('home.adminPanel', {
         url: 'adminpanel',
@@ -13,5 +13,5 @@ angular.module('named-views.adminPanel', [
         }
       }
     )
-  })
+  }])
 ;

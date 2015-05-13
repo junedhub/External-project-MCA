@@ -1,7 +1,7 @@
 angular.module('named-views.packerNmovers', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider) {
     $stateProvider
       .state('home.packerNmovers', {
         url: 'packerNmovers',
@@ -11,4 +11,4 @@ angular.module('named-views.packerNmovers', [
           }
       }
     })
-});
+}]);

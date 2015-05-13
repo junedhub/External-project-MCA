@@ -1,7 +1,7 @@
 angular.module('named-views.map', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider) {
     $stateProvider
       .state('home.map', {
         url: 'map',
@@ -15,4 +15,4 @@ angular.module('named-views.map', [
           }
       }
     })
-});
+}]);
