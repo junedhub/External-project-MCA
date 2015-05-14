@@ -1,7 +1,7 @@
 angular.module('named-views.vendorhomepg', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.vendorhomepg', {
         url: 'vendorhomepg',
@@ -12,5 +12,5 @@ angular.module('named-views.vendorhomepg', [
         }
       }
     )
-  })
+  }])
 ;

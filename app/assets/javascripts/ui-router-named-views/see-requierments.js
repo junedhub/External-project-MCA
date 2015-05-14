@@ -1,7 +1,7 @@
 angular.module('named-views.see-requierments', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.see-requierments', {
         url: 'see-requierments',
@@ -15,5 +15,5 @@ angular.module('named-views.see-requierments', [
         }
       }
     )
-  })
+  }])
 ;

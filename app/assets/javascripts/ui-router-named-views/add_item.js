@@ -1,7 +1,7 @@
 angular.module('named-views.add_item', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.add_item', {
         url: 'add_item',
@@ -15,5 +15,5 @@ angular.module('named-views.add_item', [
         }
       }
     )
-  })
+  }])
 ;

@@ -1,7 +1,7 @@
 angular.module('named-views.complaint', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.complaint', {
         url: 'complaint',
@@ -16,5 +16,5 @@ angular.module('named-views.complaint', [
         }
       }
     )
-  })
+  }])
 ;

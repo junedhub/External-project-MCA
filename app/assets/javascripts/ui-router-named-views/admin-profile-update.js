@@ -1,7 +1,7 @@
 angular.module('named-views.admin-profile-update', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.admin-profile-update', {
         url: 'admin-profile-update',
@@ -16,5 +16,5 @@ angular.module('named-views.admin-profile-update', [
         }
       }
     )
-  })
+  }])
 ;

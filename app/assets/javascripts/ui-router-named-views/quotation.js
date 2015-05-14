@@ -1,7 +1,7 @@
 angular.module('named-views.quotation', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.quotation', {
         url: 'quotation',
@@ -16,5 +16,5 @@ angular.module('named-views.quotation', [
         }
       }
     )
-  })
+  }])
 ;

@@ -1,7 +1,7 @@
 angular.module('named-views.feedback-mangt', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.feedback-mangt', {
         url: 'feedback-mangt',
@@ -16,5 +16,5 @@ angular.module('named-views.feedback-mangt', [
         }
       }
     )
-  })
+  }])
 ;

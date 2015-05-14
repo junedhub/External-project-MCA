@@ -1,7 +1,7 @@
 angular.module('named-views.ContactUs', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.ContactUs', {
         url: 'contactus',
@@ -12,5 +12,5 @@ angular.module('named-views.ContactUs', [
         }
       }
     )
-  })
+  }])
 ;

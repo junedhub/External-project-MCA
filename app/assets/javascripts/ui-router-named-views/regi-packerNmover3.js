@@ -1,7 +1,7 @@
 angular.module('named-views.regi-packerNmover3', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.regi-packerNmover3', {
         url: 'regi-packerNmover3',
@@ -12,6 +12,6 @@ angular.module('named-views.regi-packerNmover3', [
         }
       }
     )
-  })
+  }])
 ;
 

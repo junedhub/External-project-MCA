@@ -1,7 +1,7 @@
 angular.module('named-views.deal-cancle-report', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.deal-cancle-report', {
         url: 'deal-cancle-report',
@@ -16,5 +16,5 @@ angular.module('named-views.deal-cancle-report', [
         }
       }
     )
-  })
+  }])
 ;

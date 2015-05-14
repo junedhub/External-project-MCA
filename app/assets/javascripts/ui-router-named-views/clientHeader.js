@@ -1,7 +1,7 @@
 angular.module('named-views.clientHeader', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.clientHome', {
         url: 'mahaveer',
@@ -12,5 +12,5 @@ angular.module('named-views.clientHeader', [
         }
       }
     )
-  })
+  }])
 ;

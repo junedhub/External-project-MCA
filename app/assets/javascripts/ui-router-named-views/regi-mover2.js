@@ -1,7 +1,7 @@
 angular.module('named-views.regi-mover2', [
     'ui.router'
   ])
-  .config(function ($stateProvider) {
+  .config(['$stateProvider',function($stateProvider){
     $stateProvider
       .state('home.regi-mover2', {
         url: 'regi-mover2',
@@ -12,6 +12,6 @@ angular.module('named-views.regi-mover2', [
         }
       }
     )
-  })
+  }])
 ;
 
