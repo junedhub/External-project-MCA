@@ -1,7 +1,7 @@
 angular.module('named-views.requi-summary', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.requi-summary', {
         url: 'requirement-summary',
@@ -15,5 +15,5 @@ angular.module('named-views.requi-summary', [
         }
       }
     )
-  }])
+  })
 ;

@@ -1,7 +1,7 @@
 angular.module('named-views.feedback', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.feedback', {
         url: 'feedback',
@@ -12,4 +12,4 @@ angular.module('named-views.feedback', [
           }
       }
     })
-}]);
+});

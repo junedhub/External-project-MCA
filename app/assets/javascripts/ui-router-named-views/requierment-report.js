@@ -1,7 +1,7 @@
 angular.module('named-views.requierment-report', [
     'ui.router'
   ])
-  .config(['$stateProvider',function ($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.requierment-report', {
         url: 'requierment-report',
@@ -16,5 +16,5 @@ angular.module('named-views.requierment-report', [
         }
       }
     )
-  }])
+  })
 ;

@@ -1,7 +1,7 @@
 angular.module('named-views.registration', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.registration', {
         url: 'registration',
@@ -15,4 +15,4 @@ angular.module('named-views.registration', [
           }
     	}
     })
-}]);
+});

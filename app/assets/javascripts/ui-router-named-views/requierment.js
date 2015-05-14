@@ -1,7 +1,7 @@
 angular.module('named-views.requierment', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.requierment', {
         url: 'requierment',
@@ -16,6 +16,6 @@ angular.module('named-views.requierment', [
         }
       }
     )
-  }])
+  })
 ;
 

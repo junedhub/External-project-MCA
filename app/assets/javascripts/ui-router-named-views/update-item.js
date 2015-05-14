@@ -1,7 +1,7 @@
 angular.module('named-views.update-item', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.update-item', {
         url: 'update-item',
@@ -15,5 +15,5 @@ angular.module('named-views.update-item', [
         }
       }
     )
-  }])
+  })
 ;

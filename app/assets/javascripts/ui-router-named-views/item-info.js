@@ -1,7 +1,7 @@
 angular.module('named-views.item-info', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.item-info', {
         url: 'item-info',
@@ -16,6 +16,6 @@ angular.module('named-views.item-info', [
         }
       }
     )
-  }])
+  })
 ;
 

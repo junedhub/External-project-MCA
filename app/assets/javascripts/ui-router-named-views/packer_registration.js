@@ -1,7 +1,7 @@
 angular.module('named-views.packerregistration', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.packer_registration', {
         url: 'packer_registration',
@@ -12,5 +12,5 @@ angular.module('named-views.packerregistration', [
         }
       }
     )
-  }])
+  })
 ;

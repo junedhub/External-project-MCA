@@ -1,7 +1,7 @@
 angular.module('named-views.regi-packer1', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.regi-packer1', {
         url: 'regi-packer1',
@@ -15,6 +15,6 @@ angular.module('named-views.regi-packer1', [
         }
       }
     )
-  }])
+  })
 ;
 

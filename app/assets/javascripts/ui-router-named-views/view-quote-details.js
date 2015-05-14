@@ -1,7 +1,7 @@
 angular.module('named-views.quote-details', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.quote-details', {
         url: 'quote-details',
@@ -16,5 +16,5 @@ angular.module('named-views.quote-details', [
         }
       }
     )
-  }])
+  })
 ;

@@ -1,7 +1,7 @@
 angular.module('named-views.blacklist', [
     'ui.router'
   ])
-  .config(['$stateProvider',function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.blacklist', {
         url: 'blacklist',
@@ -16,5 +16,5 @@ angular.module('named-views.blacklist', [
         }
       }
     )
-  }])
+  })
 ;
