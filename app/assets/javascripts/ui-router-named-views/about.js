@@ -1,7 +1,7 @@
 angular.module('named-views.aboutus', [
     'ui.router'
   ])
-  .config(function($stateProvider) {
+  .config(function ($stateProvider) {
     $stateProvider
       .state('home.aboutus', {
         url: 'aboutus',
